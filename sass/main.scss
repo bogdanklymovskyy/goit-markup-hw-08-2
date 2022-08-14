@@ -1,0 +1,15 @@
+@import './components/normalize.scss';
+@import './utils/vars.scss';
+@import './components/header.scss';
+@import './components/section-one.scss';
+@import './components/section-two.scss';
+@import './components/section-three.scss';
+@import './components/section-four.scss';  
+@import './components/section-five.scss';
+@import './components/section-six.scss';
+@import './components/footer.scss';
+@import './components/modal-and-global-and-other.scss';
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
