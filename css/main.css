@@ -1440,7 +1440,7 @@ ul {
   flex-direction: row;
 }
 
-ul:not(.isk, .section-three__list-image, .section-four__team-list, .section-six__images-container-content-list-card, .section-two__list-benefits) {
+ul:not(.isk, .section-three__list-image, .section-four__team-list, .section-six__images-container-content-list-card, .section-two__list-benefits, .mobile-kontakt-nav, .mobile-social) {
   display: flex;
   align-items: center;
 }
@@ -1877,10 +1877,18 @@ h2 {
 .mobile-close-icon {
   width: 40px;
   height: 36px;
+  fill: #212121;
 }
 .burger-icon:hover,
 .mobile-close-icon:hover {
   fill: var(--acent-color);
+}
+
+.burger-icon {
+  width: 40px;
+  height: 36px;
+  fill: #212121;
+  display: flex;
 }
 
 .mobile-close-icon {
@@ -1960,6 +1968,8 @@ h2 {
   letter-spacing: 0.02em;
   color: #2196F3;
   margin-bottom: 32px;
+  display: block;
+  margin-left: 40px;
 }
 
 .tel-mail2 {
@@ -1971,6 +1981,8 @@ h2 {
   letter-spacing: 0.02em;
   color: #757575;
   margin-bottom: 64px;
+  display: block;
+  margin-left: 40px;
 }
 
 .mobile-kontakt-nav {
@@ -1988,4 +2000,25 @@ h2 {
   /* identical to box height, or 122% */
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.mobile-social {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.mobile-social-link {
+  margin-left: 40px;
+}
+
+.mobile-kontakt-nav {
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.mobile-social {
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

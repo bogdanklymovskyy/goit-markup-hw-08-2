@@ -8,9 +8,18 @@
 .mobile-close-icon {
   width: 40px;
   height: 36px;
+  fill: #212121;
   &:hover {
     fill: var(--acent-color);
   }
+}
+
+
+.burger-icon {
+  width: 40px;
+  height: 36px;
+  fill: #212121;
+  display: flex;
 }
 .mobile-close-icon {
   position: absolute;
@@ -88,6 +97,8 @@ letter-spacing: 0.02em;
 
 color: #2196F3;
 margin-bottom: 32px;
+display: block;
+margin-left: 40px;
 }
 
 .tel-mail2 {
@@ -100,6 +111,8 @@ margin-bottom: 32px;
     
     color: #757575;
     margin-bottom: 64px;
+display: block;
+margin-left: 40px;
 }
 
 .mobile-kontakt-nav {
@@ -120,4 +133,25 @@ letter-spacing: 0.02em;
 
 color: #2196F3;
 
+}
+
+.mobile-social {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.mobile-social-link {
+  margin-left: 40px;
+}
+
+.mobile-kontakt-nav {
+align-items: flex-start;
+justify-content: flex-start;
+display: flex;
+}
+
+.mobile-social {
+align-items: flex-start;
+justify-content: flex-start;
+display: flex;
 }

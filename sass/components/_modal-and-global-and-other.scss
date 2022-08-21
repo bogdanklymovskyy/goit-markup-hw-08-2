@@ -92,7 +92,7 @@
   
  
   
-  ul:not(.isk, .section-three__list-image, .section-four__team-list, .section-six__images-container-content-list-card, .section-two__list-benefits) {
+  ul:not(.isk, .section-three__list-image, .section-four__team-list, .section-six__images-container-content-list-card, .section-two__list-benefits,.mobile-kontakt-nav,.mobile-social) {
     display: flex;
     align-items: center;
   }
