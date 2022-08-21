@@ -307,7 +307,11 @@ flex-direction: column;
   }
   
   .footer__all-content {
-
+@media (min-width: 1200px) {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
   }
 
   .footer__nav {
@@ -315,4 +319,15 @@ flex-direction: column;
           text-align: center;
     }
 
+  }
+
+
+
+
+
+  .footer__subscribe-list {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
   }

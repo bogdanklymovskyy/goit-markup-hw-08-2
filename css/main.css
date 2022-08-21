@@ -225,6 +225,12 @@ address {
   letter-spacing: 0.02em;
   color: #2196F3;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contact-list-item {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .header__logo {
   display: inline;
@@ -256,8 +262,23 @@ header {
   margin: 0 auto;
 }
 
-.header__item:not(.header__item-exception), .header__contact-list-item:not(.header__mail) {
+.header__item:not(.header__item-exception) {
   margin-left: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contact-list {
+    margin-left: 84px;
+  }
+}
+
+.header__contact-list-item {
+  margin-left: 50px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contact-list-item {
+    margin-left: 0px;
+  }
 }
 
 .header__contact-list {
@@ -303,8 +324,17 @@ header {
   }
 }
 
-.header__contact-list {
-  margin-left: 280px;
+@media (min-width: 1200px) {
+  .header__contact-list {
+    margin-left: 280px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__contact-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contacts {
@@ -437,7 +467,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .section-two__list-benefits {
     display: flex;
     flex-direction: row;
@@ -491,7 +521,7 @@ header {
   background: #F5F4FA;
   border-radius: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .section-two__list-benefits-item-svg {
     display: flex;
     justify-content: center;
@@ -503,6 +533,13 @@ header {
 }
 .section-two__list-benefits-item-svg .section-two__list-benefits-item {
   padding-right: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-two__list-benefits-item {
+    width: 354px;
+    justify-content: center;
+  }
 }
 
 .section-three__list-image {
@@ -580,7 +617,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .section-four__team-list {
     display: flex;
     flex-direction: row;
@@ -720,6 +757,12 @@ header {
   margin-left: 10px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-four__team-list-item {
+    max-width: 354px;
+  }
+}
+
 @media (min-width: 1200px) {
   .section-five__clients-list-item:not(:last-child) {
     margin-right: 30px;
@@ -751,6 +794,7 @@ header {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 738px;
   }
 }
 
@@ -771,6 +815,11 @@ header {
 .section-five__clients-list-item-company-link:hover .section-five__clients-list-item-company-link-icon-client, .section-five__clients-list-item-company-link:focus .section-five__clients-list-item-company-link-icon-client {
   fill: var(--accent);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-five__clients-list-item-company-link {
+    width: 226px;
+  }
 }
 
 .section-five__clients-list-item-company-link-icon-client {
@@ -823,10 +872,17 @@ header {
     align-items: flex-start;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 768px) {
   .section-six__button-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .section-six__button-list {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -906,6 +962,18 @@ header {
 }
 .section-six__images-container-content-list-card-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-six__images-container-content-list-card-item {
+    width: 354px;
+    height: 404px;
+  }
+}
+@media (max-width: 767px) {
+  .section-six__images-container-content-list-card-item {
+    width: 450px;
+    height: 404px;
+  }
 }
 
 .section-six__images-container-content-list-card-item-box {
@@ -1265,9 +1333,24 @@ footer {
   margin-left: 10px;
 }
 
+@media (min-width: 1200px) {
+  .footer__all-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+
 @media (max-width: 1199px) {
   .footer__nav {
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__subscribe-list {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -1400,6 +1483,11 @@ h2 {
   left: 0;
   z-index: 20;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+@media (max-width: 767px) {
+  .backdrop {
+    width: 450px;
+  }
 }
 
 .modal {
