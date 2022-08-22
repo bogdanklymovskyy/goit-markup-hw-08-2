@@ -155,3 +155,9 @@ align-items: flex-start;
 justify-content: flex-start;
 display: flex;
 }
+
+.burger-btn,.mobile-close-btn {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

@@ -79,3 +79,14 @@
   .section-one__title {
     margin-bottom: 30px;
   }
+
+  .title-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-one__title {
+    text-align: center;
+  }

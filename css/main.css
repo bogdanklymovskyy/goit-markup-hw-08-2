@@ -439,6 +439,17 @@ header {
   margin-bottom: 30px;
 }
 
+.title-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one__title {
+  text-align: center;
+}
+
 .section-two__list-benefits-item-text {
   font-family: "Roboto";
   font-style: normal;
@@ -1373,6 +1384,11 @@ footer {
 .footer-c {
   margin: 0;
 }
+@media (min-width: 1200px) {
+  .footer-c {
+    min-width: 507px;
+  }
+}
 
 .eff {
   font-family: "Roboto";
@@ -2021,4 +2037,10 @@ h2 {
   align-items: flex-start;
   justify-content: flex-start;
   display: flex;
+}
+
+@media (min-width: 768px) {
+  .burger-btn, .mobile-close-btn {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
