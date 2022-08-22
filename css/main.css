@@ -1918,7 +1918,6 @@ h2 {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  max-width: 480px;
   height: 100vh;
   max-height: 100%;
   overflow: scroll;
