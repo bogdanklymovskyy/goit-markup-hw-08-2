@@ -94,6 +94,9 @@
       color: #2196F3;
       fill: #2196F3;
     }
+    @media (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
   
   .header__mail {
@@ -182,6 +185,7 @@
     margin-right: 93px;
     @media (max-width: 767px) {
       margin-right: 284px;
+      margin-top: 16px;
     }
   }
 
@@ -292,4 +296,11 @@ display: none;
   @media (max-width: 767px) {
     min-height: 60px;
   }
+}
+
+.header__contact-list-item {
+  @media (min-width: 768px) {
+     display: contents; 
+  }
+
 }

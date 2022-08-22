@@ -164,6 +164,11 @@ address {
   color: #2196F3;
   fill: #2196F3;
 }
+@media (min-width: 1200px) {
+  .header__telephone {
+    margin-left: 30px;
+  }
+}
 
 .header__mail:hover, .header__mail:focus {
   font-family: "Roboto";
@@ -250,6 +255,7 @@ address {
 @media (max-width: 767px) {
   .header__logo-link {
     margin-right: 284px;
+    margin-top: 16px;
   }
 }
 
@@ -356,6 +362,12 @@ header {
 @media (max-width: 767px) {
   .page-header {
     min-height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__contact-list-item {
+    display: contents;
   }
 }
 
@@ -1292,6 +1304,11 @@ footer {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: 93px;
+  }
+}
 
 .footer__subscribe-item {
   width: 100%;
@@ -1307,10 +1324,21 @@ footer {
     align-items: center;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__subscribe-item-form {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__subscribe-item-form {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .footer__subscribe-item .footer__subscribe-item-input {
   height: 50px;
-  width: 450px;
   margin-right: 12px;
   padding-left: 16px;
   padding-top: 15px;
@@ -1350,6 +1378,20 @@ footer {
     margin-bottom: 20px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__subscribe-item-input {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__subscribe-item-input {
+    width: 450px;
+  }
+}
+
+.footer__subscribe-title {
+  margin-bottom: 20px;
+}
 
 .footer__social-links-item-link-icon {
   fill: var(--footer-text);
@@ -1365,6 +1407,12 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__all-content {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -1387,6 +1435,19 @@ footer {
 @media (min-width: 1200px) {
   .footer-c {
     min-width: 507px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-c {
+    min-width: 1200px;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1464,19 +1525,6 @@ ul:not(.isk, .section-three__list-image, .section-four__team-list, .section-six_
 .isk:not(.section-six__button-list) {
   display: flex;
   justify-content: center;
-}
-
-.notlipo {
-  border: 1px solid #EEEEEE;
-  height: 404px;
-  width: 370px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.notlipo:hover, .notlipo:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  border: 1px solid #EEEEEE;
-  height: 404px;
-  width: 370px;
 }
 
 .marg:not(.section-two, .section-one) {
@@ -2042,4 +2090,32 @@ h2 {
   .burger-btn, .mobile-close-btn {
     display: none;
   }
+}
+
+.burger-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.burger-btn[aria-expanded=false] .icon-menu-close {
+  display: none;
+}
+
+.burger-btn[aria-expanded=true] .icon-menu-open {
+  display: none;
+}
+
+.burger-btn:hover {
+  fill: #2196F3;
+}
+
+.burger-btn:focus {
+  fill: #2196F3;
 }/*# sourceMappingURL=main.css.map */
