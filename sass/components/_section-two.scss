@@ -23,6 +23,10 @@
       color: #757575;
       padding-top: 10px;
         }
+
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+        }
   }
 
   .section-two__list-benefits {
@@ -48,12 +52,13 @@ flex-direction: column;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
     color: #212121;
-    
+    @media (max-width: 767px) {
+      text-align: center;
+    }
 
     @media (min-width: 768px) {
     font-family: 'Roboto';
